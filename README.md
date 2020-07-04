@@ -1,4 +1,6 @@
-# immortals
+# Immortals
+
+##### OPXT user interface component library
 
 ## Project setup
 ```
