@@ -1,4 +1,8 @@
 @import "~tailwindcss/base";
 @import "~tailwindcss/components";
+@import '~prismjs/themes/prism-okaidia.css';
+
+@import "base/_animation";
+
 /*! purgecss end ignore */
 @import "~tailwindcss/utilities";

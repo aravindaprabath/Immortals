@@ -1,16 +1,18 @@
 <template>
   <div>
-    <p class="mb-4">Header</p>
+    <div class="mx-auto mb-5">
+      <h1 class="text-2xl font-semibold text-gray-900">Headers</h1>
+    </div>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </p>
+    <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
+      <div
+        class="-ml-4 -mt-4 flex justify-between items-center flex-wrap sm:flex-no-wrap"
+      >
+        <div class="ml-4 mt-4">
+          <div class="flex items-center"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
