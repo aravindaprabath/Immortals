@@ -19,8 +19,8 @@ export default {
     navItems() {
       const sidebarMenu = [
         { title: "Navigation", route: { name: "navigation" } },
-        { title: "Headers", route: { name: "headers" } },
-        { title: "Tables", route: { name: "tables" } }
+        { title: "Headers", route: { name: "header" } },
+        { title: "Tables", route: { name: "table" } }
       ];
 
       return sidebarMenu;

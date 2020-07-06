@@ -31,7 +31,7 @@
 
         <div class="flex-shrink-0 flex items-center px-4">
           <img
-            class="h-8 w-auto"
+            class="h-6 w-auto"
             src="/img/opusxentax250.png"
             alt="Immortals"
           />
@@ -64,8 +64,8 @@ export default {
     navItems() {
       const mobileNavItems = [
         { title: "Navigation", route: { name: "navigation" } },
-        { title: "Headers", route: { name: "headers" } },
-        { title: "Tables", route: { name: "tables" } }
+        { title: "Headers", route: { name: "header" } },
+        { title: "Tables", route: { name: "table" } }
       ];
 
       return mobileNavItems;

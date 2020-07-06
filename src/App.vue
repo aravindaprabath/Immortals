@@ -8,7 +8,7 @@
       >
         <div class="flex items-center flex-shrink-0 px-4">
           <img
-            class="h-8 w-auto"
+            class="h-6 w-auto"
             src="/img/opusxentax250.png"
             alt="Immortals"
           />
