@@ -79,6 +79,10 @@
         <prism language="html" class="rounded-md">
           {{ codeSnippet.accordion }}
         </prism>
+
+        <prism language="css" class="rounded-md">
+          {{ codeSnippet.accordionStyles }}
+        </prism>
       </div>
     </transition>
   </div>

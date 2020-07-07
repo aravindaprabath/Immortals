@@ -70,6 +70,70 @@ const accordion = {
     </div>
   </div>
 </div>
+`,
+  accordionStyles: `
+/* Tab content - Closed */
+.tab-content {
+  max-height: 0;
+  -webkit-transition: max-height 0.35s;
+  -o-transition: max-height 0.35s;
+  transition: max-height 0.35s;
+}
+
+/* :checked - Resize to full height */
+.tab input:checked ~ .tab-content {
+  @apply .max-h-screen;
+}
+
+/* Label formatting when open */
+.tab input:checked + label {
+  @apply .bg-gray-100;
+  @apply .text-blue-500;
+}
+
+/* Icon */
+.tab label::after {
+  @apply .float-right;
+  @apply .top-0;
+  @apply .right-0;
+  @apply .block;
+  @apply .text-center;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.2;
+  font-size: 15px;
+  transition: all 0.35s;
+}
+
+/* Icon - Closed state */
+.tab input[type="checkbox"] + label::after {
+  content: "+";
+  @apply .font-bold;
+  @apply .border;
+  @apply .rounded-full;
+  @apply .border-gray-100;
+}
+
+.tab input[type="radio"] + label::after {
+  content: "\\25BE";
+  @apply .font-bold;
+  @apply .border;
+  @apply .rounded-full;
+  @apply .border-gray-100;
+}
+
+/* Icon - Open state */
+.tab input[type="checkbox"]:checked + label::after {
+  @apply .bg-blue-500;
+  @apply .text-gray-100;
+  transform: rotate(315deg);
+}
+
+.tab input[type="radio"]:checked + label::after {
+  transform: rotateX(180deg);
+  @apply .bg-blue-500;
+  @apply .text-gray-100;
+}
 `
 };
 
