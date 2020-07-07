@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Table from "../views/Table.vue";
 import Header from "../views/Header.vue";
+import Accordion from "../views/Accordion.vue";
 import Navigation from "../views/Navigation.vue";
 
 Vue.use(VueRouter);
@@ -26,6 +27,11 @@ const routes = [
     path: "/table",
     name: "Table",
     component: Table
+  },
+  {
+    path: "/accordion",
+    name: "Accordion",
+    component: Accordion
   }
 ];
 
