@@ -1,7 +1,7 @@
 <template>
   <div class="flex-1 px-4 flex justify-between">
     <div class="flex-1 flex">
-      <div class="w-full flex md:ml-0">
+      <div class="w-full flex md:ml-0 hidden">
         <label for="nav_search" class="sr-only">Search </label>
         <div class="relative w-full text-gray-400 focus-within:text-gray-600">
           <div

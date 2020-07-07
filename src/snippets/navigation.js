@@ -1,5 +1,5 @@
 const navigation = {
-  vertical: `
+  verticalNav: `
 <nav>
   <a
     href="#"

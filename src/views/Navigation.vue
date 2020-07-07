@@ -45,7 +45,7 @@
             <button
               type="button"
               class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 hover:text-gray-500 focus:outline-none active:bg-gray-50 active:text-gray-800"
-              v-clipboard:copy="codeSnippet.vertical"
+              v-clipboard:copy="codeSnippet.verticalNav"
             >
               <svg
                 class="-ml-1 mr-2 h-5 w-5 text-gray-400"
@@ -69,57 +69,7 @@
 
     <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
       <div class="w-64">
-        <nav>
-          <a
-            href="#"
-            class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-900 rounded-md bg-gray-100 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
-            aria-current="page"
-          >
-            <span class="truncate">
-              Dashboard
-            </span>
-          </a>
-          <a
-            href="#"
-            class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150"
-          >
-            <span class="truncate">
-              Link 1
-            </span>
-          </a>
-          <a
-            href="#"
-            class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150"
-          >
-            <span class="truncate">
-              Link 2
-            </span>
-          </a>
-          <a
-            href="#"
-            class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150"
-          >
-            <span class="truncate">
-              Link 3
-            </span>
-          </a>
-          <a
-            href="#"
-            class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150"
-          >
-            <span class="truncate">
-              Link 4
-            </span>
-          </a>
-          <a
-            href="#"
-            class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150"
-          >
-            <span class="truncate">
-              Link 5
-            </span>
-          </a>
-        </nav>
+        <div v-html="codeSnippet.verticalNav" />
       </div>
     </div>
 
@@ -129,7 +79,7 @@
         v-if="codeView"
       >
         <prism language="html" class="rounded-md">
-          {{ codeSnippet.vertical }}
+          {{ codeSnippet.verticalNav }}
         </prism>
       </div>
     </transition>
