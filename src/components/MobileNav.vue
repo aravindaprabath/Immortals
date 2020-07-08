@@ -42,6 +42,7 @@
               v-for="({ route, title }, index) in navItems"
               :key="index"
               :to="route.name"
+              @click.native="hideMobileMenu"
               class="group flex items-center px-2 py-2 text-base leading-6 font-medium text-gray-600 rounded-md focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
             >
               {{ title }}
