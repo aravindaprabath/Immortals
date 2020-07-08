@@ -16,15 +16,13 @@
           >
             <svg
               class="h-6 w-6 text-gray-500"
-              stroke="currentColor"
-              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
+              <path fill="none" d="M0 0h24v24H0z" />
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
+                fill="currentColor"
+                d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
               />
             </svg>
           </button>
@@ -44,7 +42,7 @@
               v-for="({ route, title }, index) in navItems"
               :key="index"
               :to="route.name"
-              class="group flex items-center px-2 py-2 text-base leading-6 font-medium text-gray-900 rounded-md focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
+              class="group flex items-center px-2 py-2 text-base leading-6 font-medium text-gray-600 rounded-md focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
             >
               {{ title }}
             </router-link>

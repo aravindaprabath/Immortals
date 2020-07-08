@@ -33,5 +33,6 @@ export default {
 <style lang="scss">
 .router-link-active {
   @apply .bg-gray-100;
+  @apply .text-gray-900 #{!important};
 }
 </style>

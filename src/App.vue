@@ -32,15 +32,13 @@
         >
           <svg
             class="h-6 w-6"
-            stroke="currentColor"
-            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
+            <path fill="none" d="M0 0h24v24H0z" />
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h7"
+              fill="currentColor"
+              d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z"
             />
           </svg>
         </button>
