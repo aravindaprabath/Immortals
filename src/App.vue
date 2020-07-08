@@ -1,9 +1,6 @@
 <template>
   <div id="app" class="h-screen flex overflow-hidden bg-gray-100">
-    <MobileNav
-      :showMobileNav="showMobileMenu"
-      @hideMobileNav="hideMobileMenu"
-    />
+    <MobileNav :showMobileNav="mobileNav" @hideMobileNav="hideMobileMenu" />
 
     <div class="hidden md:flex md:flex-shrink-0">
       <div
@@ -28,7 +25,7 @@
         <button
           class="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-600 md:hidden"
           aria-label="Open sidebar"
-          @click="showMobileMenu = !showMobileMenu"
+          @click="mobileNav = !mobileNav"
         >
           <svg
             class="h-6 w-6"
@@ -76,13 +73,13 @@ export default {
 
   data() {
     return {
-      showMobileMenu: false,
+      mobileNav: false,
     }
   },
 
   methods: {
     hideMobileMenu() {
-      this.showMobileMenu = false
+      this.mobileNav = false
     },
   },
 }

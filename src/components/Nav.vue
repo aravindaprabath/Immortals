@@ -12,17 +12,14 @@
 </template>
 
 <script>
+import { navItems } from '@/data/navigation'
+
 export default {
   name: 'Nav',
 
   computed: {
     navItems() {
-      const sidebarMenu = [
-        { title: 'Navigation', route: { name: 'navigation' } },
-        { title: 'Headers', route: { name: 'header' } },
-        { title: 'Tables', route: { name: 'table' } },
-        { title: 'Accordion', route: { name: 'accordion' } },
-      ]
+      const sidebarMenu = navItems
 
       return sidebarMenu
     },
