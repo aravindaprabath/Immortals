@@ -1,5 +1,5 @@
 <template>
-  <div class="md:hidden">
+  <div class="md:hidden" v-if="showMobileNav">
     <div class="fixed inset-0 flex z-40">
       <div class="fixed inset-0">
         <div class="absolute inset-0 bg-gray-600 opacity-75"></div>
@@ -10,11 +10,12 @@
       >
         <div class="absolute top-0 right-0 -mr-14 p-1">
           <button
-            class="flex items-center justify-center h-12 w-12 rounded-full focus:outline-none focus:bg-gray-600"
+            class="flex items-center justify-center mt-1 h-12 w-12 rounded-full focus:outline-none focus:bg-gray-600"
             aria-label="Close sidebar"
+            @click="hideMobileMenu"
           >
             <svg
-              class="h-6 w-6 text-white"
+              class="h-6 w-6 text-gray-500"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -58,18 +59,32 @@
 
 <script>
 export default {
-  name: "MobileNav",
+  name: 'MobileNav',
+
+  props: {
+    showMobileNav: {
+      type: Boolean,
+      default: false,
+    },
+  },
 
   computed: {
     navItems() {
       const mobileNavItems = [
-        { title: "Navigation", route: { name: "navigation" } },
-        { title: "Headers", route: { name: "header" } },
-        { title: "Tables", route: { name: "table" } }
-      ];
+        { title: 'Navigation', route: { name: 'navigation' } },
+        { title: 'Headers', route: { name: 'header' } },
+        { title: 'Tables', route: { name: 'table' } },
+        { title: 'Accordion', route: { name: 'accordion' } },
+      ]
 
-      return mobileNavItems;
-    }
-  }
-};
+      return mobileNavItems
+    },
+  },
+
+  methods: {
+    hideMobileMenu() {
+      this.$emit('hideMobileNav')
+    },
+  },
+}
 </script>

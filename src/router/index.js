@@ -1,44 +1,44 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Table from "../views/Table.vue";
-import Header from "../views/Header.vue";
-import Accordion from "../views/Accordion.vue";
-import Navigation from "../views/Navigation.vue";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Table from '../views/Table.vue'
+import Header from '../views/Header.vue'
+import Accordion from '../views/Accordion.vue'
+import Navigation from '../views/Navigation.vue'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    redirect: "/navigation"
+    path: '/',
+    name: 'Home',
+    redirect: '/navigation',
   },
   {
-    path: "/navigation",
-    name: "Navigation",
-    component: Navigation
+    path: '/navigation',
+    name: 'Navigation',
+    component: Navigation,
   },
   {
-    path: "/header",
-    name: "Header",
-    component: Header
+    path: '/header',
+    name: 'Header',
+    component: Header,
   },
   {
-    path: "/table",
-    name: "Table",
-    component: Table
+    path: '/table',
+    name: 'Table',
+    component: Table,
   },
   {
-    path: "/accordion",
-    name: "Accordion",
-    component: Accordion
-  }
-];
+    path: '/accordion',
+    name: 'Accordion',
+    component: Accordion,
+  },
+]
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
-  routes
-});
+  routes,
+})
 
-export default router;
+export default router

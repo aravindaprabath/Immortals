@@ -1,6 +1,9 @@
 <template>
   <div id="app" class="h-screen flex overflow-hidden bg-gray-100">
-    <MobileNav />
+    <MobileNav
+      :showMobileNav="showMobileMenu"
+      @hideMobileNav="hideMobileMenu"
+    />
 
     <div class="hidden md:flex md:flex-shrink-0">
       <div
@@ -25,6 +28,7 @@
         <button
           class="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-600 md:hidden"
           aria-label="Open sidebar"
+          @click="showMobileMenu = !showMobileMenu"
         >
           <svg
             class="h-6 w-6"
@@ -59,20 +63,33 @@
 </template>
 
 <script>
-import Nav from "@/components/Nav.vue";
-import Header from "@/components/Header.vue";
-import MobileNav from "@/components/MobileNav.vue";
+import Nav from '@/components/Nav.vue'
+import Header from '@/components/Header.vue'
+import MobileNav from '@/components/MobileNav.vue'
 
 export default {
-  name: "App",
+  name: 'App',
+
   components: {
     Nav,
     Header,
-    MobileNav
-  }
-};
+    MobileNav,
+  },
+
+  data() {
+    return {
+      showMobileMenu: false,
+    }
+  },
+
+  methods: {
+    hideMobileMenu() {
+      this.showMobileMenu = false
+    },
+  },
+}
 </script>
 
 <style lang="scss">
-@import "./assets/scss/app.scss";
+@import './assets/scss/app.scss';
 </style>

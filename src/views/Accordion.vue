@@ -68,7 +68,11 @@
     </div>
 
     <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
-      <div v-html="codeSnippet.accordion" />
+      <div class="container mx-auto">
+        <div class="w-full xl:w-3/5 mx-auto p-8">
+          <div v-html="codeSnippet.accordion" />
+        </div>
+      </div>
     </div>
 
     <transition name="fade" mode="out-in">
@@ -89,23 +93,23 @@
 </template>
 
 <script>
-import Prism from "vue-prism-component";
-import { accordion } from "@/snippets/accordion";
+import Prism from 'vue-prism-component'
+import { accordion } from '@/snippets/accordion'
 
 export default {
-  name: "Accordion",
+  name: 'Accordion',
 
   components: {
-    Prism
+    Prism,
   },
 
   data() {
     return {
       codeView: false,
-      codeSnippet: accordion
-    };
-  }
-};
+      codeSnippet: accordion,
+    }
+  },
+}
 </script>
 
 <style lang="scss">
@@ -143,16 +147,16 @@ export default {
 }
 
 /* Icon - Closed state */
-.tab input[type="checkbox"] + label::after {
-  content: "+";
+.tab input[type='checkbox'] + label::after {
+  content: '+';
   @apply .font-bold;
   @apply .border;
   @apply .rounded-full;
   @apply .border-gray-100;
 }
 
-.tab input[type="radio"] + label::after {
-  content: "\25BE";
+.tab input[type='radio'] + label::after {
+  content: '\25BE';
   @apply .font-bold;
   @apply .border;
   @apply .rounded-full;
@@ -160,13 +164,13 @@ export default {
 }
 
 /* Icon - Open state */
-.tab input[type="checkbox"]:checked + label::after {
+.tab input[type='checkbox']:checked + label::after {
   @apply .bg-blue-500;
   @apply .text-gray-100;
   transform: rotate(315deg);
 }
 
-.tab input[type="radio"]:checked + label::after {
+.tab input[type='radio']:checked + label::after {
   transform: rotateX(180deg);
   @apply .bg-blue-500;
   @apply .text-gray-100;

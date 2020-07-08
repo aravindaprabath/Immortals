@@ -87,21 +87,21 @@
 </template>
 
 <script>
-import Prism from "vue-prism-component";
-import { navigation } from "@/snippets/navigation";
+import Prism from 'vue-prism-component'
+import { navigation } from '@/snippets/navigation'
 
 export default {
-  name: "Navigation",
+  name: 'Navigation',
 
   components: {
-    Prism
+    Prism,
   },
 
   data() {
     return {
       codeView: false,
-      codeSnippet: navigation
-    };
-  }
-};
+      codeSnippet: navigation,
+    }
+  },
+}
 </script>

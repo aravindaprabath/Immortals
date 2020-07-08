@@ -13,21 +13,21 @@
 
 <script>
 export default {
-  name: "Nav",
+  name: 'Nav',
 
   computed: {
     navItems() {
       const sidebarMenu = [
-        { title: "Navigation", route: { name: "navigation" } },
-        { title: "Headers", route: { name: "header" } },
-        { title: "Tables", route: { name: "table" } },
-        { title: "Accordion", route: { name: "accordion" } }
-      ];
+        { title: 'Navigation', route: { name: 'navigation' } },
+        { title: 'Headers', route: { name: 'header' } },
+        { title: 'Tables', route: { name: 'table' } },
+        { title: 'Accordion', route: { name: 'accordion' } },
+      ]
 
-      return sidebarMenu;
-    }
-  }
-};
+      return sidebarMenu
+    },
+  },
+}
 </script>
 
 <style lang="scss">

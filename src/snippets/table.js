@@ -137,7 +137,7 @@ const table = {
     </table>
   </div>
 </div>
-`
-};
+`,
+}
 
-export { table };
+export { table }

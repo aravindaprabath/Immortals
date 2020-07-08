@@ -85,21 +85,21 @@
 </template>
 
 <script>
-import Prism from "vue-prism-component";
-import { header } from "@/snippets/header";
+import Prism from 'vue-prism-component'
+import { header } from '@/snippets/header'
 
 export default {
-  name: "Header",
+  name: 'Header',
 
   components: {
-    Prism
+    Prism,
   },
 
   data() {
     return {
       codeView: false,
-      codeSnippet: header
-    };
-  }
-};
+      codeSnippet: header,
+    }
+  },
+}
 </script>

@@ -51,7 +51,7 @@ const navigation = {
     </span>
   </a>
 </nav>
-`
-};
+`,
+}
 
-export { navigation };
+export { navigation }

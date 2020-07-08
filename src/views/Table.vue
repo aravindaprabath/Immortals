@@ -85,21 +85,21 @@
 </template>
 
 <script>
-import Prism from "vue-prism-component";
-import { table } from "@/snippets/table";
+import Prism from 'vue-prism-component'
+import { table } from '@/snippets/table'
 
 export default {
-  name: "Table",
+  name: 'Table',
 
   components: {
-    Prism
+    Prism,
   },
 
   data() {
     return {
       codeView: false,
-      codeSnippet: table
-    };
-  }
-};
+      codeSnippet: table,
+    }
+  },
+}
 </script>
