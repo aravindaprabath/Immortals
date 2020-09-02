@@ -16,10 +16,22 @@ const accordion = {
     >
     <div class="tab-content overflow-hidden leading-normal">
       <div class="text-sm p-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Tenetur, architecto, explicabo perferendis nostrum, maxime
-        impedit atque odit sunt pariatur illo obcaecati soluta
-        molestias iure facere dolorum adipisci eum? Saepe, itaque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+        ut aliquip ex ea commodo. Excepteur sint occaecat cupidatat non proident, sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+        consequat. Duis aute irure dolor in.
       </div>
     </div>
   </div>
@@ -37,10 +49,22 @@ const accordion = {
     >
     <div class="tab-content overflow-hidden leading-normal">
       <div class="text-sm p-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Tenetur, architecto, explicabo perferendis nostrum, maxime
-        impedit atque odit sunt pariatur illo obcaecati soluta
-        molestias iure facere dolorum adipisci eum? Saepe, itaque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+        ut aliquip ex ea commodo. Excepteur sint occaecat cupidatat non proident, sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+        consequat. Duis aute irure dolor in.
       </div>
     </div>
   </div>
@@ -58,10 +82,22 @@ const accordion = {
     >
     <div class="tab-content overflow-hidden leading-normal">
       <div class="text-sm p-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Tenetur, architecto, explicabo perferendis nostrum, maxime
-        impedit atque odit sunt pariatur illo obcaecati soluta
-        molestias iure facere dolorum adipisci eum? Saepe, itaque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+        ut aliquip ex ea commodo. Excepteur sint occaecat cupidatat non proident, sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+        consequat. Duis aute irure dolor in.
       </div>
     </div>
   </div>
@@ -93,42 +129,29 @@ const accordion = {
   @apply .top-0;
   @apply .right-0;
   @apply .block;
-  @apply .text-center;
   width: 1.5em;
   height: 1.5em;
-  line-height: 1.2;
-  font-size: 15px;
   transition: all 0.35s;
 }
 
 /* Icon - Closed state */
-.tab input[type="checkbox"] + label::after {
-  content: "+";
-  @apply .font-bold;
-  @apply .border;
-  @apply .rounded-full;
-  @apply .border-gray-100;
+.tab input[type='checkbox'] + label::after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23A0AEC0'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
 
-.tab input[type="radio"] + label::after {
-  content: "\\25BE";
-  @apply .font-bold;
-  @apply .border;
-  @apply .rounded-full;
-  @apply .border-gray-100;
+.tab input[type='radio'] + label::after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23A0AEC0'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
 
 /* Icon - Open state */
-.tab input[type="checkbox"]:checked + label::after {
-  @apply .bg-blue-500;
-  @apply .text-gray-100;
-  transform: rotate(315deg);
+.tab input[type='checkbox']:checked + label::after {
+  transform: rotate(180deg);
 }
 
-.tab input[type="radio"]:checked + label::after {
+.tab input[type='radio']:checked + label::after {
   transform: rotateX(180deg);
-  @apply .bg-blue-500;
-  @apply .text-gray-100;
 }
 `,
 }

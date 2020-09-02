@@ -68,10 +68,8 @@
     </div>
 
     <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
-      <div class="container mx-auto">
-        <div class="w-full xl:w-3/5 mx-auto p-8">
-          <div v-html="codeSnippet.accordion" />
-        </div>
+      <div class="w-full">
+        <div v-html="codeSnippet.accordion" />
       </div>
     </div>
 
@@ -138,41 +136,28 @@ export default {
   @apply .top-0;
   @apply .right-0;
   @apply .block;
-  @apply .text-center;
   width: 1.5em;
   height: 1.5em;
-  line-height: 1.2;
-  font-size: 15px;
   transition: all 0.35s;
 }
 
 /* Icon - Closed state */
 .tab input[type='checkbox'] + label::after {
-  content: '+';
-  @apply .font-bold;
-  @apply .border;
-  @apply .rounded-full;
-  @apply .border-gray-100;
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23A0AEC0'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
 
 .tab input[type='radio'] + label::after {
-  content: '\25BE';
-  @apply .font-bold;
-  @apply .border;
-  @apply .rounded-full;
-  @apply .border-gray-100;
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23A0AEC0'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
 
 /* Icon - Open state */
 .tab input[type='checkbox']:checked + label::after {
-  @apply .bg-blue-500;
-  @apply .text-gray-100;
-  transform: rotate(315deg);
+  transform: rotate(180deg);
 }
 
 .tab input[type='radio']:checked + label::after {
   transform: rotateX(180deg);
-  @apply .bg-blue-500;
-  @apply .text-gray-100;
 }
 </style>
