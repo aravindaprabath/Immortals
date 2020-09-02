@@ -11,12 +11,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    redirect: '/navigation',
+    redirect: '/accordion',
   },
   {
-    path: '/navigation',
-    name: 'Navigation',
-    component: Navigation,
+    path: '/accordion',
+    name: 'Accordion',
+    component: Accordion,
   },
   {
     path: '/header',
@@ -24,14 +24,14 @@ const routes = [
     component: Header,
   },
   {
+    path: '/navigation',
+    name: 'Navigation',
+    component: Navigation,
+  },
+  {
     path: '/table',
     name: 'Table',
     component: Table,
-  },
-  {
-    path: '/accordion',
-    name: 'Accordion',
-    component: Accordion,
   },
 ]
 

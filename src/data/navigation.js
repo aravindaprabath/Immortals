@@ -1,8 +1,8 @@
 const navItems = [
-  { title: 'Navigation', route: { name: 'navigation' } },
-  { title: 'Headers', route: { name: 'header' } },
-  { title: 'Tables', route: { name: 'table' } },
   { title: 'Accordion', route: { name: 'accordion' } },
+  { title: 'Headers', route: { name: 'header' } },
+  { title: 'Navigation', route: { name: 'navigation' } },
+  { title: 'Tables', route: { name: 'table' } },
 ]
 
 export { navItems }
